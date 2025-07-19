@@ -1,0 +1,54 @@
+# =========================
+# Global OS / Tooling
+# =========================
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*.bak
+*.tmp
+*.log
+*.vs
+.vscode
+.idea
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.ncrunch*
+
+# =========================
+# Node / Angular (client)
+# =========================
+client/node_modules/
+client/dist/
+client/.angular/
+client/package-lock.json
+client/npm-debug.log
+client/.env
+client/.env.local
+client/.output/
+
+# =========================
+# .NET / ASP.NET Core (server)
+# =========================
+server/bin/
+server/obj/
+server/*.db
+server/*.sqlite
+server/*.mdb
+server/*.ldf
+server/*.mdf
+server/appsettings.*.json
+server/.vs/
+server/.vscode/
+server/Properties/launchSettings.json
+
+# Ignore Rider / JetBrains artifacts
+server/.idea/
+
+# =========================
+# Common Logs
+# =========================
+**/logs/
+*.log

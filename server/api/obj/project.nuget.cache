@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "VmXq7hZVgzw=",
+  "dgSpecHash": "8ecJwHhwlxE=",
   "success": true,
-  "projectFilePath": "/Users/kumarsparsh/Dev_Projects/server/api/api.csproj",
+  "projectFilePath": "/Users/kumarsparsh/Dev_Projects/GadgetShop/server/api/api.csproj",
   "expectedPackageFiles": [
     "/Users/kumarsparsh/.nuget/packages/microsoft.extensions.apidescription.server/6.0.5/microsoft.extensions.apidescription.server.6.0.5.nupkg.sha512",
     "/Users/kumarsparsh/.nuget/packages/microsoft.extensions.dependencyinjection.abstractions/8.0.2/microsoft.extensions.dependencyinjection.abstractions.8.0.2.nupkg.sha512",

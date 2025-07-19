@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "/Users/kumarsparsh/Dev_Projects/server/api/api.csproj": {}
+    "/Users/kumarsparsh/Dev_Projects/GadgetShop/server/api/api.csproj": {}
   },
   "projects": {
-    "/Users/kumarsparsh/Dev_Projects/server/api/api.csproj": {
+    "/Users/kumarsparsh/Dev_Projects/GadgetShop/server/api/api.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "/Users/kumarsparsh/Dev_Projects/server/api/api.csproj",
+        "projectUniqueName": "/Users/kumarsparsh/Dev_Projects/GadgetShop/server/api/api.csproj",
         "projectName": "api",
-        "projectPath": "/Users/kumarsparsh/Dev_Projects/server/api/api.csproj",
+        "projectPath": "/Users/kumarsparsh/Dev_Projects/GadgetShop/server/api/api.csproj",
         "packagesPath": "/Users/kumarsparsh/.nuget/packages/",
-        "outputPath": "/Users/kumarsparsh/Dev_Projects/server/api/obj/",
+        "outputPath": "/Users/kumarsparsh/Dev_Projects/GadgetShop/server/api/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "/Users/kumarsparsh/.nuget/NuGet/NuGet.Config"

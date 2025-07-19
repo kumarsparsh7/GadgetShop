@@ -1,0 +1,28 @@
+# Node modules (always rebuilt in Docker)
+node_modules
+
+# Angular build output (Docker builds this fresh)
+dist
+
+# Logs
+npm-debug.log
+yarn-error.log
+pnpm-debug.log
+
+# OS / IDE Files
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+
+# Git
+.git
+.gitignore
+
+# Editor configs
+.vscode
+.idea
+
+# Environment files (optional, depends on your security model)
+.env
+.env.local

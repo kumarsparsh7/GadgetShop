@@ -1,0 +1,52 @@
+<h2 class="py-4 px-4">Inventory</h2>
+<form class="row gx-3 gy-2 px-4 align-items-center" (ngSubmit)="onSubmit()" novalidate>
+  <div class="col-sm-3">
+    <label class="form-label" for="specificSizeInputName">Product ID</label>
+    <input type="text" class="form-control" id="specificSizeInputName" [disabled]="disableProductIdInput" placeholder="Product ID" [(ngModel)]="inventoryData.productId" name="productId">
+  </div>
+  <div class="col-sm-3">
+    <label class="form-label" for="specificSizeSelect">Product Name</label>
+    <select class="form-select" id="specificSizeSelect" [(ngModel)]="inventoryData.productName" name="productName">
+      <option selected>Choose...</option>
+      <option value="Earphones">Earphones</option>
+      <option value="Mobile">Mobile</option>
+      <option value="PlayStation">PlayStation</option>
+    </select>
+  </div>
+  <div class="col-sm-3">
+    <label class="form-label" for="specificSizeInputName">Quantity Available</label>
+    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Stock Available" [(ngModel)]="inventoryData.availableQty" name="availableQty">
+  </div>
+  <div class="col-sm-3">
+    <label class="form-label" for="specificSizeInputName">Reorder Point</label>
+    <input type="text" class="form-control" id="specificSizeInputName" placeholder="Reorder Point" [(ngModel)]="inventoryData.reorderPoint" name="reorderPoint">
+  </div>
+  <div class="col-auto py-2">
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </div>
+</form>
+<h2 class="py-3 px-4">Inventory Details</h2>
+<table class="table table-striped ms-4">
+  <thead>
+    <tr>
+      <th scope="col">Product ID</th>
+      <th scope="col">Product Name</th>
+      <th scope="col">Stock Available</th>
+      <th scope="col">Reorder Point</th>
+      <th scope="col">Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    <!-- GET Step 2: Bind received data from component to dynamically create rows -->
+    <tr *ngFor="let inventory of inventoryDetails">
+      <th scope="row">{{inventory.ProductId}}</th>
+      <td>{{inventory.ProductName}}</td>
+      <td>{{inventory.AvailableQty}}</td>
+      <td>{{inventory.ReorderPoint}}</td>
+      <td>
+        <button type="button" class="btn btn-primary" (click)="populateFormForEdit(inventory)">Edit</button>
+        <button type="button" class="btn btn-danger ms-2" (click)="openConfirmDialog(inventory.ProductId)">Delete</button>
+      </td>
+    </tr>
+  </tbody>
+</table>

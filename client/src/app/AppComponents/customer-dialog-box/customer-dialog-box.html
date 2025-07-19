@@ -1,0 +1,35 @@
+ <div class="row mx-3 py-3">
+    <h5>Customer</h5>
+    <form (ngSubmit)="onSubmit()">
+        <div class="row py-3">
+            <div class="col">
+                <input type="text" class="form-control" id="specificSizeInputName" placeholder="Customer ID" name="customerId" [(ngModel)]="customerDetails.customerId" [disabled]="disableCustomerIdInput">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col">
+                <input type="text" class="form-control" id="specificSizeInputName" placeholder="First Name" name="firstName" [(ngModel)]="customerDetails.firstName">
+            </div>
+            <div class="col">
+                <input type="text" class="form-control" id="specificSizeInputName" placeholder="Last Name" name="lastName" [(ngModel)]="customerDetails.lastName">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col">
+                <input type="email" class="form-control" id="specificSizeInputName" placeholder="Email" name="email" [(ngModel)]="customerDetails.email">
+            </div>
+            <div class="col">
+                <input type="tel" class="form-control" id="specificSizeInputName" placeholder="Phone No." name="phoneNo" [(ngModel)]="customerDetails.phoneNo">
+            </div>
+        </div>
+        <div class="row py-2">
+            <div class="col">
+               <label class="form-label" for="specificSizeInputName">Registration Date</label>
+                <input type="date" class="form-control" id="specificSizeInputName" placeholder="Registration Date" name="registrationDate" [(ngModel)]="customerDetails.registrationDate">
+            </div>
+        </div>
+        <!-- <div class="row py-2 align-items-center px-3"> -->
+            <button type="submit" class="btn btn-primary">{{btnText}}</button>
+        <!-- </div> -->
+    </form>
+</div>
